@@ -28,10 +28,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@doptools/tslib-semver@^0.0.1-alpha.4":
-  version "0.0.1-alpha.4"
-  resolved "https://npm.pkg.github.com/download/@doptools/tslib-semver/0.0.1-alpha.4/171de620cda54961f6cde968808fe34f71137b86be63072b1198353dc13954e9#0a31d3e8b74ca3121e5907f8dd18d03037dbbc9f"
-  integrity sha512-0tXr+IrIYCe/UeZMYQmKnsk7grQsbEw1UyueFfDC0mJa0agvuX4nKUapCQMDa7togYulC5ShbsE2iSAANjcunQ==
+"@doptools/tslib-semver@^0.0.1-alpha.5":
+  version "0.0.1-alpha.5"
+  resolved "https://npm.pkg.github.com/download/@doptools/tslib-semver/0.0.1-alpha.5/56d1971880a288e525ccb4b301734c1b4aada5af2416641350162d6dd2ae5492#ec745120469a6e73f6aa5fc02cd61ef35058bfe7"
+  integrity sha512-dYQbvW8sz4Xi7/XZdJDe+RF9MMkb2KGL1shtNmOkWvWU1DS9U37MGepapOs/OtFbPr953WyB8m/lVRPtymocgQ==
   dependencies:
     semver "^7.3.4"
 

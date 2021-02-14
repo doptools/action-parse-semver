@@ -39,6 +39,6 @@
   },
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@doptools/tslib-semver": "^0.0.1-alpha.4"
+    "@doptools/tslib-semver": "^0.0.1-alpha.5"
   }
 }
