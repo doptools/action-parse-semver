@@ -2,19 +2,25 @@
   "name": "@doptools/action-parse-semver",
   "version": "0.0.0",
   "description": "",
-  "main": "dist/tslib-semver.umd.js",
+  "main": "dist/index.js",
   "author": "Dan Erdelt <erd@conceptual.ca>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/doptools/action-parse-semver.git"
   },
+  "keywords": [
+    "github",
+    "actions",
+    "semver",
+    "parser"
+  ],
   "engines": {
     "node": ">=6.0.0"
   },
   "scripts": {
-    "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
-    "prebuild": "rimraf dist",
-    "build": "tsc --module commonjs && typedoc --out docs --theme minimal src"
+    "build": "tsc",
+    "pack": "ncc build --source-map --license licenses.txt",
+    "prebuild": "rimraf dist"
   },
   "bugs": {
     "url": "https://github.com/doptools/action-parse-semver/issues"
@@ -22,6 +28,7 @@
   "homepage": "https://github.com/doptools/action-parse-semver#readme",
   "devDependencies": {
     "@types/node": "^10.11.0",
+    "@vercel/ncc": "^0.25.1",
     "rimraf": "^2.6.2",
     "ts-node": "^9.1.1",
     "tslint": "^6.1.3",
@@ -31,6 +38,7 @@
     "typescript": "^4.1.5"
   },
   "dependencies": {
-    "@doptools/tslib-semver": "0.0.0"
+    "@actions/core": "^1.2.6",
+    "@doptools/tslib-semver": "^0.0.1-alpha.1"
   }
 }

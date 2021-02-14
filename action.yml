@@ -1,0 +1,42 @@
+name: 'Semver Parser'
+description: 'Parse a semantic version'
+inputs:
+  version:
+    description: 'The version to be parsed'
+    required: true
+  errorOnInvalid:
+    description: 'Error if the semver is invalid'
+    required: false
+    default: 'true'
+  versionRegex:
+    description: 'Regex to extract semantic version from'
+    required: false
+    default: ''
+outputs:
+  build:
+    description: 'BUILD part of the semver'
+  version:
+    description: 'The full version but without the BUILD'
+  full:
+     description: 'The full version'
+  hasBuild:
+    description: 'true if version had BUILD part'
+  isPrerelease:
+    description: 'true if version had PRERELEASE part'
+  isValid:
+    description: 'true if version is a valid semver'
+  major:
+    description: 'MAJOR part of the semver'
+  minor:
+    description: 'MINOR part of the semver'
+  patch:
+    description: 'PATCH part of the semver'
+  prerelease:
+    description: 'PRERELEASE part of the semver'
+  prereleaseId:
+    description: 'the first part of PRERELEASE'
+  raw:
+    description: 'the input'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

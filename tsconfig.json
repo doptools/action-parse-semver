@@ -1,27 +1,14 @@
 {
   "compilerOptions": {
+    "target": "ES6",
     "module": "CommonJS",
-    "target": "ES2019",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-
+    "outDir": "./dist",
+    "rootDir": "./src",
     "strict": true,
-    "sourceMap": true,
-    "declaration": true,
-
-    "strictNullChecks": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "declarationDir": "dist/types",
-    "outDir": "dist/lib",
-    "typeRoots": [
-      "node_modules/@types"
-    ]
+    "noImplicitAny": true,
+    "esModuleInterop": true
   },
-  "include": [
-    "src"
+  "exclude": [
+    "node_modules"
   ]
 }
